@@ -1,14 +1,47 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 	margin: 0;
+	padding: 0;
+	font-family: 'Karla', sans-serif !important;
+	background: #DFE0E2 !important;
+	color: #384048 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.my-tasks {
+ 	font-family: 'Rubik', sans-serif;
+	color: #384048;
+}
+
+.navbar {
+	background-color: #384048 !important;
+}
+
+.card, .card-header {
+	color: #384048 !important;
+}
+
+.card-header {
+	border: 0px !important;
+}
+
+.project-item, .task-item {
+	color: #384048;
+}
+
+.project-item:hover, .task-item:hover {
+	background-color: #b8c0c8 !important;
+	color: #384048;
+}
+
+.task-list-link {
+	color: #384048;
+}
+
+.task-list-link:hover {
+	color: #384048;
+	text-decoration: none;
+}
+
+.completed-task {
+	text-decoration: line-through !important;
+	color: gray;
 }
