@@ -1,5 +1,5 @@
-# MyTasks
-A web application to manage projects and tasks. Ruby on Rails API + React/Redux client.
+# MyTasks API
+Ruby on Rails API for project and task management app
 
-## Setup
+## Database setup
 `rails db:setup`
