@@ -13,7 +13,10 @@ A web application to manage projects and tasks. Ruby on Rails API + React/Redux 
 ## Setup
 `rails db:setup`
 
+`rails credentials:edit`
+
 `cd client && npm install`
+
 
 ## Run
 
