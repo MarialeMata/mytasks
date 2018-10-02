@@ -1,24 +1,20 @@
-# README
+# MyTasks
+A web application to manage projects and tasks. Ruby on Rails API + React/Redux client.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+* User sign up/login
+* Create/edit/delete projects
+* Create/edit/delete tasks
+* Assign tasks to projects
+* Add comments to tasks
+* Set status ('active' or 'done'), priority ('low', 'medium' and 'high') and deadline for any task
+* Overview: Lists the 5 last recently accessed projects and 5 most inmediate tasks (according to their deadlines)
 
-Things you may want to cover:
+## Setup
+`rails db:setup`
 
-* Ruby version
+`cd client && npm install`
 
-* System dependencies
+## Run
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rake start`
