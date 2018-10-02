@@ -16,4 +16,5 @@ A web application to manage projects and tasks. Ruby on Rails API + React/Redux 
 `cd client && npm install`
 
 ## Run
+
 `rake start`
