@@ -29,7 +29,7 @@ export const getProjectsByLastSeen = createSelector([getProjects], projects => {
     .slice(0, 5);
 });
 
-// Get 5 most tasks sorted by approaching deadline (not showing expired)
+// Get 5 most inmediate tasks sorted by approaching deadline (not showing expired)
 export const getTasksByDeadline = createSelector([getTasks], tasks => {
   let date = new Date();
   return tasks
