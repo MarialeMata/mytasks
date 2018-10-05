@@ -6,6 +6,10 @@ import * as actions from '../../actions/taskActions';
 import * as uiActions from '../../actions/uiActions';
 import { NewTaskForm } from '../../components/task';
 import { getProjectCount } from '../../selectors';
+let moment = require('moment');
+if ('default' in moment) {
+    moment = moment['default'];
+}
 
 class NewTask extends Component {
 
@@ -27,13 +31,12 @@ class NewTask extends Component {
 
   onChange(event) {
     const taskData = this.props.taskData;
-    if (event.constructor.name === 'SyntheticEvent') {
+    if (moment.isMoment(event)) {
+      let deadline = event.format();
+      taskData['deadline'] = deadline;
+    } else {
       const field = event.target.name;
       taskData[field] = event.target.value;
-      
-    } else {
-      let deadline = event.format();
-      taskData["deadline"] = deadline;
     }
     return this.props.actions.setTask(taskData);
   }
